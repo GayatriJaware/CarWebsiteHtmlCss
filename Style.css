@@ -1,0 +1,275 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: cursive;
+}
+.header{
+    height: 120px; width: 100%;
+    background-color: orange;
+}
+.header .navbar{
+    background-color: black;
+    color: white;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.header .navbar .links{
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+}
+.header .navbar .links li{
+    padding-left: 30px;
+    font-size: 25px;
+}
+.header .navbar .links li:hover{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: olivedrab;
+}
+.banner{
+    height: 550px;
+    width: 100%;
+    background-color: yellow;
+    background: url("./Img/backgraound.jpg");
+    background-size: cover;
+    background-position: right;
+   
+    
+}
+.banner .content{
+    color: whitesmoke;
+    text-align: center;
+}
+.banner h1{
+    font-size: 60px;
+    text-shadow: 3px 3px 4px orange;
+    padding-top: 25px;
+}
+.banner h3{
+    padding-left: 550px;
+    padding-top: 20px;
+    font-size: 30px;
+}
+.about{
+    height: 700px;  
+    width: 100%;
+   background: linear-gradient(orange,white,rgb(192, 87, 57));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about .subAbout{
+    height: 450px;
+    width: 75%;
+    display: flex;
+    border-radius: 30px;
+    box-shadow: 0px 0px 40px 3px rgb(243, 87, 8);
+}
+.about .subAbout .image{
+    height: 450px;
+
+}
+.about .subAbout .content{
+    color: aliceblue;
+    background-color: black;
+}
+.about .subAbout .content h1{
+    padding-top:30px ;
+    text-align: center;
+    font-size: 40px;
+}
+.about .subAbout .content p{
+    font-size: 20px;
+    padding: 30px;
+    text-align: justify;
+    line-height: 35px;
+}
+.about .subAbout .content h2{
+    padding-right: 30px;
+    text-align: end;
+    
+}
+.services{
+    height: 600px;
+    width: 100%;
+    background-image: url(Img/sectionimg.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.services .card{
+    height: 400px;
+    width: 250px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 20px;
+}
+.services .card:hover{
+ transform: translateY(-20px);
+ transition: 0.5s;
+}
+.services .card p{
+    text-align: center;
+    padding-top: 20px;
+}
+.services .card button
+{
+    padding: 5px 34px;
+    font-size: 20px;
+    position: relative;
+    top: 20px;
+    left: 25px;
+    background-color: orange;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    box-shadow: 0 0 3px 2px grey;
+}
+/* collection css */
+.navbar a{
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+}
+.ex{
+    text-align: center;
+    font-size: 40px;
+    background-color: black;
+    color: white;
+}
+
+.collection{
+    height: 640px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgb(21, 19, 19),rgb(53, 50, 50),rgb(9, 9, 10));
+}
+.boxParent{
+    height: 550px;
+    width: 90%;
+    background: linear-gradient(black,white);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+.boxParent .box{
+    height: 200px;
+    width: 260px;
+    border: 2px solid black;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 0 12px 1px rgb(24, 25, 24);
+    
+}
+.boxParent .box img{
+    height: 200px;
+    width: 260px;
+}
+.box img:hover{
+    transform: scale(2,2);
+    transition: 0.3s;
+    filter: blur(3px);
+}
+.box h1{
+    position: absolute;
+    font-size: 40px;
+    color: white;
+    text-shadow: 5px 5px rgb(2, 2, 2);
+}
+
+
+/* contact form */
+.contact{
+    height: 700px;
+    width: 100%;
+    background: linear-gradient(white,black);
+}
+.contact .form{
+    height: 400px;
+    width: 550px;
+    background-color: white;
+    padding: 30px;
+    border: 2px solid black;
+    position: relative;
+    top: 100px;
+    left: 150px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px 5px rgb(74, 69, 69);
+    
+}
+/* .contact h1{
+    font-size: 40px;
+    color: white;
+    background-color: black;
+    text-align: center;
+} */
+.contact .form input{
+    height: 40px;
+    width: 500px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding-left: 30px;
+    border-bottom: 2px solid black;
+}
+
+.contact .form button{
+    margin-top: 20px;
+    height: 40px;
+    width: 300px;
+    margin-left: 100px;
+    background-color: orange;
+    border: none;
+    border-radius: 10px;
+    font-weight: 900;
+    font-size: 17px;
+}
+.contact .form input:last-of-type{
+    height: 80px;
+}
+
+/* contact us css */
+.contact .media{
+    height: 300px;
+    width: 300px;
+   padding: 30px;
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+    background-color: white;
+    margin-left: 68%;
+    position: relative;
+    bottom: 300px;
+
+}
+.contact .media i{
+    font-size: 80px;
+    position: relative;
+    left: 30px;
+    top: 30px;
+}
+.contact .media{
+    box-shadow: 0 0 20px 4px rgb(42, 37, 29);
+    border-radius: 30px;
+}
+.contact .media i:hover{
+    text-shadow: 0px 0px 10px 30px orange;
+}
+.contact .media:hover{
+    transform: scale(1.1) translateY(-30px);
+    transition: 2s;
+    
+}
